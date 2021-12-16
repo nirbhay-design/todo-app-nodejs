@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    font-family:Helvetica, Sans-Serif;
+}
+body{
+    background-color: rgb(241, 241, 241);
+
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    text-align:center; 
+    justify-content:center;
+}
+
+.image__header{
+    height:50px;
+    width:50px;
+    border:1px solid #31363A;
+    border-radius:50%;
+}
+.header__class{
+    border:2px solid black;
+    background-color:#31363A;
+    padding:8px;
+
+}
+
+#todo__app{
+    color:white;
+}
+
+.login__reg__button_class{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    justify-content:center;
+    margin:10vh 0 5vh 0;
+}
+
+.login__class{
+    border:2px solid rgb(196, 193, 193);
+    padding:50px;
+    margin:5px;
+    border-radius:3px;
+    background-color:#E5E4E2;
+}
+.register__class{
+    border:2px solid rgb(196, 193, 193);
+    padding:50px;
+    margin:5px;
+    border-radius:3px;
+    background-color:#E5E4E2;
+}
+
+h4{
+    margin:5px;
+}
+
+
+
+@media only screen and (max-width: 490px) {
+    .login__reg__button_class{
+        flex-direction:column;
+    }
+    .login__class{
+        display:block;
+    }
+
+    .register__class{
+        display:block;
+    }
+
+}
+/* @media only screen and (max-height: 700px) {
+    
+
+} */
+
+.login__button{
+    font-size:17px;
+    padding:10px 15px 10px 15px;
+    margin-top:10px;
+    background-color:#4688F4;
+    color:white;
+    border:none;
+    transition:background-color 1s;
+    border-radius:1px;
+}
+
+.login__button:hover{
+    background-color:#3D6EC9;
+}

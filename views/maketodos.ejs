@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/maketodos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>Todos</title>
+</head>
+<body>
+    <div class="parent__container">
+        <div class="current__container">
+            <div class="img__btn">
+                <a href='/' class='icon__image'><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KcO5NR3iyA-5NkPU3OrtB8IgPnvj2We-Ig&usqp=CAU' alt='Home' class='image__header'/></a>
+                <form action=<%= `/login/${user}` %> class="todo__form" method='POST'>
+                    <input type='text' name='todo' id='todo' placeholder='Enter todo' class='myinput' required/>
+                    <input type='submit' name='submit' id='add2do' class='addtodo' value='+addTodo'>
+                </form>
+            </div>
+            <hr>
+            <div class="all__todos">
+                <% if (result.length > 0) {%>
+                    <% result.forEach((todo,idx)=>{ %>
+                        <div class="with__hr">
+
+                            <div class="show__todo">
+                                <h4><%= todo.todotitle %></h4>
+                                <div class="button__dropdown">
+                                    <a href=<%= `/delete/${user}/${todo.tid}` %>><button class='icon__button_delete'><i class="zmdi zmdi-delete"></i></button></a>
+                                    <a href=<%= `/edit/${user}/${todo.tid}` %>><button class='icon__button_edit'><i class="zmdi zmdi-edit"></i></button></a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    <% }) %>
+                <%} else {%>
+
+                    <h3>Nothing to show up here</h3>
+                <% }%>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
+
+
+<!-- ()=>{document.getElementById('list__button').style.display='inline'} -->

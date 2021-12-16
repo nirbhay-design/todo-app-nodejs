@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    font-family:Helvetica, Sans-Serif;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    text-align:center; 
+    justify-content:center;
+    height:100%;
+}
+
+.image__header{
+    height:50px;
+    width:50px;
+    border:1px solid #31363A;
+    border-radius:50%;
+}
+.header__class{
+    border:2px solid black;
+    background-color:#31363A;
+    padding:8px;
+
+}
+
+#todo__app{
+    color:white;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+
+}
+
+.container__container{
+    display:block;
+}
+
+.register__form__div{
+    display:flex;
+    background-color:white;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.4);
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+    border-radius:10px;
+}
+
+.myform{
+    flex:0.8;
+    
+}
+
+.register__form{
+    display:flex;
+    align-items:center;
+    justify-content:right;
+    flex-direction:column;
+    padding:10px;
+    font-size:large;
+    font-weight:bold;
+    margin-top:10%;
+    margin-bottom:20%;
+
+}
+
+
+
+.myinput{
+    font-size:large;
+    margin:15px;
+    border:none;
+    outline-width: 0;
+    border-bottom:1.2px solid rgb(175, 175, 175);
+    /* transition:border-bottom 1s; */
+}
+
+.myinput:hover{
+    border-bottom:2px solid green;
+}
+
+.random__image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width:250px;
+    height:250px;
+    /* margin-top:10%; */
+}
+
+
+
+@media only screen and (max-width: 1090px) {
+    .register__form__div{
+        height:90vh;
+        width:80%;
+    }
+
+}
+@media only screen and (max-width: 700px) {
+    .register__form__div{
+        height:80vh;
+        width:80%;
+    }
+    .random__image{
+        display:none;
+    }
+    .myform{
+        flex:1;
+    }
+}
+
+#submit{
+    /* font-size:17px; */
+    /* margin-top:5px; */
+    font-size:17px;
+    padding:10px 15px 10px 15px;
+    margin-top:10px;
+    background-color:rgb(3, 150, 3);
+    color:white;
+    border:none;
+    transition:background-color 1s;
+    border-radius:5px;
+}
+
+@media only screen and (max-height: 700px) {
+    .register__form__div{
+        height:100%;
+        width:80%;
+        margin-bottom:5vh;
+    }
+
+}
+
+.btn__register{
+    font-size:17px;
+    padding:10px 15px 10px 15px;
+    margin-top:10px;
+    background-color:#0080FF;
+    color:white;
+    border:none;
+    transition:background-color 1s;
+    border-radius:5px;
+}

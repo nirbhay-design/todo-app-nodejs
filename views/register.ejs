@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header__class">
+            <div class="image__text">
+                <h3 id='todo__app'>Todo App</h3>
+                <a href='/' ><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KcO5NR3iyA-5NkPU3OrtB8IgPnvj2We-Ig&usqp=CAU' alt='Home' class='image__header'/></a>
+            </div>
+        </div>
+        <div class='register__form__div'>
+            <div class="myform">
+                <form action='/register' method='POST' class='register__form'>  
+                    <input class='myinput' type='text' name='email' id='email' placeholder='Enter username' required>
+                    <input class='myinput' type='password' name='pass' id='pass' placeholder='Enter Password' required>
+                    <input class='myinput' type= 'text' name='name' id='name' placeholder='Enter Your Name' required>
+                    <div class="buttons">
+                        <input class='btn__submit' type='submit' name='submit' id='submit' value='Register'>
+                        <a href='/login'><input class='btn__register' type='button' name='reg' id='reg' value='Login'></a>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class = 'random__image'>
+        
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZX9SQlCfYHDcPHlHINytWgllS-d_GeWGXQ&usqp=CAU' alt='there is an image'>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
