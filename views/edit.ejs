@@ -13,7 +13,7 @@
         <div class="img__btn">
             <a href='/' class='icon__image'><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KcO5NR3iyA-5NkPU3OrtB8IgPnvj2We-Ig&usqp=CAU' alt='Home' class='image__header'/></a>
             <form action=<%= `/edit/${user}/${id}` %> class="todo__form" method='POST'>
-                <input type='text' name='utodo' id='todo' placeholder='Enter todo' class='myinput' value=<%= `${result.todotitle}` %> required/>
+                <input type='text' name='utodo' id='todo' placeholder='Enter todo' class='myinput' value='<%= `${result.todotitle}` %>' required/>
                 <input type='submit' name='submit' id='add2do' class='addtodo' value='UpdateTodo'>
             </form>
         </div>
